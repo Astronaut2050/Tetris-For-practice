@@ -13,6 +13,7 @@ while not GameOver:
         if event.type == QUIT:
             pygame.quit()
             sys.exit()
+                
         elif event.type == pygame.KEYDOWN and new_game.isGameOver == True: # 重新初始化游戏
             if event.key == pygame.K_RETURN:
                 pygame.init()
